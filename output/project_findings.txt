@@ -1,0 +1,29 @@
+CRIME ANALYSIS OF INDIA (2014–2016)
+=============================================
+
+Number of analyzed regions: 36
+States: 29
+Union Territories: 7
+
+TOTAL RECORDED CRIMES BY YEAR
+2014: 2,851,563 (baseline year)
+2015: 2,949,400 (+97,837; +3.43% vs 2014)
+2016: 2,975,711 (+26,311; +0.89% vs 2015)
+
+2016 CRIME-RATE DISTRIBUTION BY REGION CATEGORY (per 100,000 population)
+State: n=29, median=192.3, IQR=128.7–237.2
+UT: n=7, median=144.8, IQR=69.2–204.6
+
+KEY FINDINGS
+Highest 2016 crime count: Uttar Pradesh (282,171)
+Highest 2016 recorded crime rate: Delhi (974.9)
+Largest increase, 2014–2016: Delhi (+53,865; +34.61%)
+Largest decrease, 2014–2016: Rajasthan (-30,020; -14.27%)
+Population/crime-rate Pearson correlation: 0.075; this is a very weak linear association in these 36 regions, not evidence of causation.
+2016 rate values beyond the 1.5-IQR fences (-47.9–410.5): Delhi (974.9), Kerala (727.6). These are statistical flags for context, not evidence of incorrect data.
+
+METHODOLOGY
+Pandas was used for loading, cleaning, summarizing, and exporting. NumPy was used for safe percentage-change calculations. Matplotlib was used for visualizations.
+
+LIMITATIONS
+Recorded IPC crimes do not necessarily represent all crimes committed. Reporting practices, population differences, and the small number of years affect interpretation. State/UT group summaries describe distributions of regions and are not population-weighted. Correlation does not establish causation. Crime-rate outliers are statistical observations, not proof of incorrect data.
