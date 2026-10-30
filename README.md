@@ -16,6 +16,7 @@ statistical summaries, and visualizations to examine crime counts and rates.
 - `processed/` — processed dataset used by the analysis
 - `notebooks/` — interactive Jupyter Notebook report
 - `output/` — generated charts, CSV summaries, and findings
+- `requirements.txt` — Python packages needed for the analysis and notebook
 - `.gitignore` — files excluded from Git tracking
 
 ## Requirements
@@ -26,13 +27,28 @@ statistical summaries, and visualizations to examine crime counts and rates.
 - Matplotlib
 - Jupyter Notebook (for the interactive report)
 
+## Set Up the Environment
+
+From the project directory, create and activate the virtual environment,
+then install the listed packages:
+
+```bash
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+In VS Code or Jupyter, select the kernel named
+`Python (.venv — CRIME-ANALYSIS-OF-INDIA)`.
+
 ## Run the Analysis
 
-From the project directory, activate your virtual environment if needed,
-then run:
+With the environment active, run:
 
 ```bash
 python main.py
+```
+
 Generated reports and charts are saved in the `output/` directory.
 
 To explore the notebook, open `notebooks/crimes_of_india_analysis.ipynb`
